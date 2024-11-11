@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --ff-poppins: "Poppins";
+    --gradient-black: rgba(0, 0, 0, 0.306);
+}
+body{
+    font-family: var(--ff-poppins);
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.11);
+}
+nav{
+    display: grid;
+    grid-template-columns: auto 1fr max-content 50px;
+    align-items: center;
+    gap: 3rem;
+}
+nav li{
+    display: inline;
+    margin-right: 1.5rem;
+}
+nav a{
+    color: black;
+}
+.logo{
+    text-align: center;
+    padding: 0rem 4rem;
+}
+.logo h1{
+    text-transform: uppercase;
+}
+#search, .go-bttn{
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+}
+#search{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 300px;
+    outline: none;
+}
+.go-bttn{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.user-profile{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.user-profile i{
+    cursor: pointer;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer-category-container{
+    margin: 0rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: max(80vw, 950px);
+}
+.category-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: auto; */
+    aspect-ratio: 1.5/1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+#electronics{
+    background-image: linear-gradient( var(--gradient-black), var(--gradient-black)), url('./images/electronics-category.jpg') ; 
+}
+#cloths{
+    background-image: linear-gradient( var(--gradient-black), var(--gradient-black)), url('./images/cloths-category.jpg') ; 
+}
+#books{
+    background-image: linear-gradient( var(--gradient-black), var(--gradient-black)), url('./images/books-category.jpg') ; 
+}
+.category-container:hover span{
+    font-size: 1.7rem;
+}
+.category-name{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    transition: all 0.3s;
+}
+.category-container span{
+    text-transform: uppercase;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1.5rem;
+}
+
+
