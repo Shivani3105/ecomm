@@ -1,0 +1,46 @@
+CREATE DATABASE ecomm;
+USE ecomm;
+
+
+CREATE TABLE product (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT,
+    price DECIMAL(10, 2) NOT NULL,
+    stock_quantity INT NOT NULL,
+    category ENUM('Electronics', 'Books', 'Cloths') NOT NULL
+);
+
+INSERT INTO product (name, description, price, stock_quantity, category) VALUES
+-- Electronics
+('Laptop', 'A high-performance laptop for gaming and work.', 79999.20, 50, 'Electronics'),
+('Smartphone', 'Latest model smartphone with advanced features.', 55999.20, 150, 'Electronics'),
+('Wireless Headphones', 'Noise-cancelling wireless headphones.', 15999.20, 75, 'Electronics'),
+('Smartwatch', 'A smartwatch with fitness tracking capabilities.', 19999.20, 100, 'Electronics'),
+('Tablet', 'A lightweight tablet for reading and browsing.', 27999.20, 60, 'Electronics'),
+('External Hard Drive', '1TB external hard drive for data storage.', 7199.20, 200, 'Electronics'),
+('Bluetooth Speaker', 'Portable Bluetooth speaker with great sound.', 10399.20, 80, 'Electronics'),
+('Gaming Monitor', '27-inch gaming monitor with high refresh rate.', 23999.20, 40, 'Electronics'),
+('Wireless Charger', 'Fast wireless charger for smartphones.', 3199.20, 150, 'Electronics'),
+
+-- Books
+('The Great Gatsby', 'A classic novel by F. Scott Fitzgerald.', 879.20, 200, 'Books'),
+('1984', 'A dystopian novel by George Orwell.', 1039.20, 150, 'Books'),
+('To Kill a Mockingbird', 'A novel by Harper Lee about racial injustice.', 1199.20, 100, 'Books'),
+('Pride and Prejudice', 'A romantic novel by Jane Austen.', 959.20, 120, 'Books'),
+('Moby Dick', 'A novel about the voyage of the whaling ship Pequod.', 1279.20, 80, 'Books'),
+('The Catcher in the Rye', 'A novel by J.D. Salinger about teenage angst.', 799.20, 120, 'Books'),
+('The Hobbit', 'A fantasy novel by J.R.R. Tolkien.', 1119.20, 90, 'Books'),
+('War and Peace', 'A historical novel by Leo Tolstoy.', 1599.20, 60, 'Books'),
+('The Alchemist', 'A novel by Paulo Coelho about following your dreams.', 1359.20, 110, 'Books'),
+
+-- Cloths
+('Cotton T-Shirt', 'A comfortable cotton t-shirt available in various sizes.', 1599.20, 300, 'Cloths'),
+('Denim Jeans', 'Stylish denim jeans for casual wear.', 3199.20, 150, 'Cloths'),
+('Leather Jacket', 'A classic leather jacket for all seasons.', 7199.20, 75, 'Cloths'),
+('Wool Sweater', 'Warm wool sweater for winter.', 3999.20, 100, 'Cloths'),
+('Summer Dress', 'A light summer dress for casual outings.', 2399.20, 200, 'Cloths'),
+('Running Shoes', 'Comfortable running shoes for all terrains.', 4799.20, 120, 'Cloths'),
+('Baseball Cap', 'Stylish baseball cap for sunny days.', 1199.20, 180, 'Cloths'),
+('Scarf', 'Warm scarf for winter wear.', 1039.20, 160, 'Cloths'),
+('Formal Shirt', 'A formal shirt suitable for office wear.', 2799.20, 140, 'Cloths');

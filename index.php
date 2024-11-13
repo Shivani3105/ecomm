@@ -1,11 +1,13 @@
+<?php
+    require('dbconfig.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7f33e8970d.js" crossorigin="anonymous"></script>
 </head>
@@ -13,9 +15,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="">Electronics</a></li>
-                <li><a href="">Cloths</a></li>
-                <li><a href="">Books</a></li>
+                <li><a href="electronics.php">Electronics</a></li>
+                <li><a href="cloths.php">Cloths</a></li>
+                <li><a href="books.php">Books</a></li>
             </ul>
             <div class="logo">
                 <h1>logo</h1>
@@ -31,7 +33,7 @@
     </header>
     <main>
         <div class="outer-category-container">
-            <a href="">
+            <a href="electronics.php">
                 <div class="category-container" id="electronics">
                     <span class="category-name">
                         Electronics
@@ -39,14 +41,14 @@
                 </div>
                 
             </a>
-            <a href="">
+            <a href="cloths.php">
                 <div class="category-container" id="cloths">
                     <span class="category-name">
                         Cloths
                     </span>
                 </div>
             </a>
-            <a href="">
+            <a href="books.php">
                 <div class="category-container" id="books">
                     <span class="category-name">
                         Books
