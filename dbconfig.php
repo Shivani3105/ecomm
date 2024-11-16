@@ -5,12 +5,9 @@
     $pass = ''; // Database password
     $db = 'ecomm'; // Database name
 
-    // Create a connection
-    $conn = new mysqli($host, $user, $pass, $db);
-
+    $conn = mysqli_connect($host, $user, $pass,$db);
     // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+    if (!$conn) {
+      die("Connection failed: " . mysqli_connect_error());
     }
-
 ?>

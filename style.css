@@ -9,6 +9,7 @@
 }
 body{
     font-family: var(--ff-poppins);
+        margin-top: 60px;
 }
 a{
     text-decoration: none;
@@ -68,12 +69,15 @@ nav a{
     cursor: pointer;
 }
 
-main{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
+.maincontent{
+    width: 80vw;
+    /* height: 100vh; */
+    margin-top: 10rem;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+  
 }
 .outer-category-container{
     margin: 0rem 1rem;
@@ -112,6 +116,15 @@ main{
 }
 .category-container span{
     text-transform: uppercase;
+}
+.custom-carousel-container {
+    width: 80%; /* Set your desired width */
+    max-width: 1200px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Center the carousel */
+}
+.carousel-item img {
+    width: 100%; /* Ensure images fill the carousel item */
+    height: auto; /* Maintain aspect ratio */
 }
 footer{
     position: fixed;

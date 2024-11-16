@@ -44,3 +44,16 @@ INSERT INTO product (name, description, price, stock_quantity, category) VALUES
 ('Baseball Cap', 'Stylish baseball cap for sunny days.', 1199.20, 180, 'Cloths'),
 ('Scarf', 'Warm scarf for winter wear.', 1039.20, 160, 'Cloths'),
 ('Formal Shirt', 'A formal shirt suitable for office wear.', 2799.20, 140, 'Cloths');
+
+==user table---
+CREATE TABLE users (
+    user_id INT(11) NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    username VARCHAR(100) UNIQUE,
+    password VARCHAR(250),
+    phone VARCHAR(15),
+    country VARCHAR(50) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (user_id)
+);
