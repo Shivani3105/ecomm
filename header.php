@@ -43,8 +43,10 @@ session_start();
                     <?php else: ?>
                         <a href="login.php" style="font-size: 12px;">Login</a>
                     <?php endif; ?>
+                    
                 </div>
             </div>
+            <div class="a1"></div>
         </nav>
     
 </body>
